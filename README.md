@@ -1,4 +1,4 @@
-# Core genome multilocus sequence typing development for Haemophilus influenzae
+# Core genome multilocus sequence typing development for *Haemophilus influenzae*
 This repository contains in-house scripts (in R and Python programming language) used for data analyses in the "Development and Implementation 1 of a Core Genome Multilocus Sequence Typing (cgMLST) scheme for Haemophilus influenzae" manuscript.
 
 ## Abstract
