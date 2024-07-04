@@ -1,0 +1,12 @@
+#PROKKA for annotation
+prokka	--outdir /output/directory/ --cpus [number of CPU] –compliant –prefix [Genome ID] /path/to/FASTA/files
+
+#PIRATE
+PIRATE -I /path/to/Prokka/GFF/files/ -o /output/directory/ -a -r -t [number of CPU]
+
+#Panaroo
+panaroo -I /path/to/Prokka/GFF/files/ -o /output/directory/  -t [number of CPU] --clean-mode strict -a core --search_radius 1000 --refind_prop_match 0.7
+
+#PEPPAN
+command 1: PEPPAN --match_identity 0.7 --orthology ml /path/to/Prokka/GFF/files/  -t [number of CPU];
+PEPPAN_parser -g /path/to/PEPPAN/output/PEPPAN.PEPPAN.gff -s /output/directory/ -t -c -a 95
